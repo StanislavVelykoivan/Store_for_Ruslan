@@ -58,7 +58,7 @@ class Database {
         throw new Error("Insert operation returned undefined.");
       }
   
-      console.log(`Inserted ${result.insertedCount} document into ${collectionName}.`);
+      console.log(`Inserted ${result.insertedId} document into ${collectionName}.`);
     } catch (error) {
       console.error("Error inserting document:", error);
     }
